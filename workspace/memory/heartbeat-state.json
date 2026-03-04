@@ -1,12 +1,12 @@
 {
-  "lastCheck": "2026-03-04T22:41:00+08:00",
+  "lastCheck": "2026-03-04T23:31:00+08:00",
   "activeSubagents": 0,
-  "errors": ["WebSocket 连接错误 (127.0.0.1:7890) - 非关键服务，本地代理问题"],
+  "errors": ["WebSocket 连接失败 (持续报错) - 飞书连接问题，Gateway 运行正常"],
   "heartbeatInterval": "30m",
   "activeTask": null,
-  "lastCompletedCount": 5,
+  "lastCompletedCount": 6,
   "staleRecoveries": [],
-  "notes": "系统运行正常。AI 升级汇报材料准备完成，剩余截图和试讲由用户执行。动态心跳 + stale 恢复机制已生效，当前无活跃任务保持 30m 间隔。Git 备份已完成（本地双仓库 + 恢复脚本），待推送 GitHub。",
+  "notes": "GitHub 备份完成！main 分支（主配置）+ workspace 分支（工作区）均已推送。自动化 cron 已设置。AI 升级汇报材料已完成。系统稳定运行。",
   "progress": {
     "ai-upgrade-report": {
       "architectureDiagram": "completed",
@@ -41,6 +41,11 @@
       "task": "心跳机制增强 - 动态频率 + stale 恢复",
       "completedAt": "2026-03-04T19:32:00+08:00",
       "details": "HEARTBEAT.md 更新：有活跃任务时心跳从 30m 切到 5m；30 分钟无进展任务自动唤醒恢复"
+    },
+    {
+      "task": "GitHub 备份 - 主配置 + 工作区推送完成",
+      "completedAt": "2026-03-04T23:28:00+08:00",
+      "details": "main 分支（主配置）和 workspace 分支（工作区）均已推送到 GitHub"
     }
   ]
 }

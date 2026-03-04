@@ -208,7 +208,7 @@
       "name": "监控 GitHub issue #29252 回复",
       "enabled": true,
       "createdAtMs": 1772240073442,
-      "updatedAtMs": 1772636431741,
+      "updatedAtMs": 1772638228891,
       "schedule": {
         "kind": "cron",
         "expr": "*/30 * * * *"
@@ -224,13 +224,13 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772638200000,
-        "lastRunAtMs": 1772636400009,
+        "nextRunAtMs": 1772640000000,
+        "lastRunAtMs": 1772638200019,
         "lastRunStatus": "error",
         "lastStatus": "error",
-        "lastDurationMs": 31732,
+        "lastDurationMs": 28872,
         "lastDeliveryStatus": "unknown",
-        "consecutiveErrors": 2,
+        "consecutiveErrors": 3,
         "lastError": "No delivery target resolved for channel \"feishu\". Set delivery.to."
       }
     },

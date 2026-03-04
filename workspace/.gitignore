@@ -1,0 +1,37 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 虚拟环境
+venv/
+env/
+.venv/
+
+# 日志
+*.log
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+*~
+
+# 系统文件
+.DS_Store
+._*
+
+# 测试产物
+coverage/
+.pytest_cache/
+test-results/
+
+# 大型数据文件（按需备份）
+*.lance
+*.db
+*.sqlite
+
+# 导出文件（可选）
+exports/*.json
+exports/*.csv

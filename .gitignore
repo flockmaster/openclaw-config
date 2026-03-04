@@ -25,8 +25,8 @@ agents/*/sessions/
 openclaw-backup-*.tar.gz
 
 # 敏感文件（手动管理）
-# .env
-# .credentials/
+.env
+.credentials/
 
 # 向量数据库（太大，重新生成）
 memory/lancedb-pro/
@@ -35,7 +35,24 @@ memory/*.lance
 # 缓存
 .cache/
 tmp/
+__pycache__/
+*.pyc
 
 # 测试产物
 coverage/
 test-results/
+
+# 历史备份和归档（不推送）
+prompt-library/**/backups/
+prompt-library/**/old_*/
+prompt-library/system-prompt-library/backups/
+
+# 大型数据导出
+prompt-library/**/exports/*.json
+prompt-library/**/repo-data/consolidated_*.json
+
+# 文档库备份
+prompt-library/**/digital-library-backup/
+
+# 整个 prompt-library 目录（外部项目，不备份）
+workspace/prompt-library/

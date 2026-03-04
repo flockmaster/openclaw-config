@@ -1,12 +1,12 @@
 {
-  "lastCheck": "2026-03-04T22:41:00+08:00",
+  "lastCheck": "2026-03-04T23:22:00+08:00",
   "activeSubagents": 0,
-  "errors": ["WebSocket 连接错误 (127.0.0.1:7890) - 非关键服务，本地代理问题"],
+  "errors": ["WebSocket 连接失败 (持续报错) - 飞书连接问题，需检查网络或飞书服务状态", "GitHub 推送超时 - 网络问题，待用户确认仓库状态"],
   "heartbeatInterval": "30m",
-  "activeTask": null,
+  "activeTask": "GitHub 备份推送",
   "lastCompletedCount": 5,
   "staleRecoveries": [],
-  "notes": "系统运行正常。AI 升级汇报材料准备完成，剩余截图和试讲由用户执行。动态心跳 + stale 恢复机制已生效，当前无活跃任务保持 30m 间隔。Git 备份已完成（本地双仓库 + 恢复脚本），待推送 GitHub。",
+  "notes": "Git 本地配置完成，SSH Key 已添加。推送 GitHub 超时，等待用户确认仓库状态。AI 升级汇报材料已完成。",
   "progress": {
     "ai-upgrade-report": {
       "architectureDiagram": "completed",

@@ -1,21 +1,13 @@
 # 上次会话摘要
 
-> 时间: 2026-03-04 06:55:47 UTC
+> 时间: 2026-03-04 17:45:27 UTC
 > 来源: feishu
-> 会话: 360865f4-677e-424a-ae49-1bc6db7d88c1
+> 会话: 4501f00a-7047-4fad-bcc2-158c1223e15a
 
 ## 关键决策
-- 架构图已通过frontend-engineer完成，提供Mermaid和SVG双版本
-- AI升级汇报材料分为架构图、问答演示、关键截图三部分
-- 所有材料已整理至桌面AI目录下
-
-## 待办事项
-- 按截图清单完成5张关键截图
-- 进行30分钟试讲演练
+- 使用 bailian/qwen3.5-plus 模型进行当前会话，默认模型为 bailian/glm-5
+- 确定将TTS克隆等长任务交给ops-agent处理，避免主会话阻塞
 
 ## 重要上下文
-- 架构图文件位置：`notes/ai-upgrade-architecture-diagram.md`
-- 问答问题清单：`notes/ai-upgrade-demo-qa-questions.md` 
-- 截图清单：`notes/ai-upgrade-screenshot-checklist.md`
-- 最终材料存放路径：`~/Desktop/AI/`及子目录
-- WebSocket连接错误(127.0.0.1:7890)为本地代理问题，不影响核心功能
+- 当前运行时模型与默认模型不同（qwen3.5-plus vs glm-5）
+- 技术方案：采用分离架构处理长时间任务，主会话保持响应性

@@ -294,7 +294,7 @@
       "blockStreamingDefault": "on",
       "blockStreamingBreak": "text_end",
       "heartbeat": {
-        "every": "30m"
+        "every": "5m"
       },
       "maxConcurrent": 4,
       "subagents": {

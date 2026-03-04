@@ -1,12 +1,12 @@
 {
-  "lastCheck": "2026-03-04T23:22:00+08:00",
+  "lastCheck": "2026-03-05T01:39:00+08:00",
   "activeSubagents": 0,
-  "errors": ["WebSocket 连接失败 (持续报错) - 飞书连接问题，需检查网络或飞书服务状态", "GitHub 推送超时 - 网络问题，待用户确认仓库状态"],
+  "errors": [],
   "heartbeatInterval": "30m",
-  "activeTask": "GitHub 备份推送",
-  "lastCompletedCount": 5,
+  "activeTask": null,
+  "lastCompletedCount": 6,
   "staleRecoveries": [],
-  "notes": "Git 本地配置完成，SSH Key 已添加。推送 GitHub 超时，等待用户确认仓库状态。AI 升级汇报材料已完成。",
+  "notes": "WebSocket 连接已恢复。Qwen3-TTS 声音克隆和每日定时播报任务已完成。",
   "progress": {
     "ai-upgrade-report": {
       "architectureDiagram": "completed",
@@ -14,6 +14,19 @@
       "screenshotChecklist": "completed",
       "filesOrganized": "completed",
       "lastUpdated": "2026-03-04T14:18:00+08:00"
+    },
+    "qwen3-tts-voice-clone": {
+      "status": "completed",
+      "completedAt": "2026-03-05T01:18:44+08:00",
+      "outputFile": "~/Desktop/qwen3-tts-output/qwen3tts_voice_clone_20260305_011843.wav",
+      "refAudio": "/Users/tingjing/.openclaw/media/inbound/金隅丽景园_3---0ab9da22-166b-4c0d-9f09-960be8535a74.m4a"
+    },
+    "daily-tts-schedule": {
+      "status": "completed",
+      "completedAt": "2026-03-05T01:39:00+08:00",
+      "script": "~/.openclaw/scripts/daily-tts-voice-clone.sh",
+      "launchAgent": "~/Library/LaunchAgents/ai.openclaw.daily-tts.plist",
+      "schedule": "每天 09:00"
     }
   },
   "completedTasks": [
@@ -41,6 +54,16 @@
       "task": "心跳机制增强 - 动态频率 + stale 恢复",
       "completedAt": "2026-03-04T19:32:00+08:00",
       "details": "HEARTBEAT.md 更新：有活跃任务时心跳从 30m 切到 5m；30 分钟无进展任务自动唤醒恢复"
+    },
+    {
+      "task": "Qwen3-TTS 声音克隆",
+      "completedAt": "2026-03-05T01:18:44+08:00",
+      "details": "使用金隅丽景园_3 音频克隆成功，输出 WAV 文件"
+    },
+    {
+      "task": "每日 TTS 定时播报",
+      "completedAt": "2026-03-05T01:39:00+08:00",
+      "details": "创建脚本 + LaunchAgent，每天 9 点自动播报"
     }
   ]
 }

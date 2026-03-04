@@ -1,0 +1,1 @@
+{"ts":1770291074888,"jobId":"bd479d85-4d31-467c-9c26-efda8ab20e2b","action":"finished","status":"ok","summary":"执行完毕，完整流程如下：\n\n1. **执行脚本**：`word_report_checker.py` 运行完成\n2. **退出码**：1（未找到今日单词报告）\n3. **处理结果**：EXIT_CODE == 1，已发送对应消息\n4. **消息已送达**：`om_x100b5773b9720450b2d4c216bea528c`\n\n明日 cron 任务将正常提醒您检查单词报告 ✅","runAtMs":1770291030717,"durationMs":44170}

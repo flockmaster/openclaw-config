@@ -1,0 +1,14 @@
+{
+    "last_updated": "2026-02-26",
+    "units": [
+        { "id": 1, "name": "四则运算", "status": "not_started", "completion_pct": 0, "lessons_done": 0, "lessons_total": 7 },
+        { "id": 2, "name": "观察物体（二）", "status": "not_started", "completion_pct": 0, "lessons_done": 0, "lessons_total": 3 },
+        { "id": 3, "name": "运算定律", "status": "not_started", "completion_pct": 0, "lessons_done": 0, "lessons_total": 10 },
+        { "id": 4, "name": "小数的意义和性质", "status": "not_started", "completion_pct": 0, "lessons_done": 0, "lessons_total": 8 },
+        { "id": 5, "name": "三角形", "status": "not_started", "completion_pct": 0, "lessons_done": 0, "lessons_total": 6 },
+        { "id": 6, "name": "小数的加法和减法", "status": "not_started", "completion_pct": 0, "lessons_done": 0, "lessons_total": 6 },
+        { "id": 7, "name": "图形的运动（二）", "status": "not_started", "completion_pct": 0, "lessons_done": 0, "lessons_total": 4 },
+        { "id": 8, "name": "平均数与条形统计图", "status": "not_started", "completion_pct": 0, "lessons_done": 0, "lessons_total": 5 },
+        { "id": 9, "name": "数学广角——鸡兔同笼", "status": "not_started", "completion_pct": 0, "lessons_done": 0, "lessons_total": 3 }
+    ]
+}

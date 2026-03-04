@@ -1,0 +1,67 @@
+{
+  "textbook": "人教版四年级下册数学",
+  "units": [
+    {
+      "id": 1, "name": "四则运算", "lessons": 7,
+      "question_mode": "ai_with_verification",
+      "knowledge_points": ["加减法的意义和各部分间的关系", "乘除法的意义和各部分间的关系", "有关0的运算", "带括号的四则运算", "解决问题"],
+      "prerequisites": []
+    },
+    {
+      "id": 2, "name": "观察物体（二）", "lessons": 3,
+      "question_mode": "question_bank",
+      "knowledge_points": ["从不同方向观察物体", "从不同角度观察立体图形"],
+      "prerequisites": []
+    },
+    {
+      "id": 3, "name": "运算定律", "lessons": 10,
+      "question_mode": "ai_with_verification",
+      "knowledge_points": ["加法交换律和结合律", "乘法交换律和结合律", "乘法分配律", "简便计算"],
+      "prerequisites": [1]
+    },
+    {
+      "id": 4, "name": "小数的意义和性质", "lessons": 8,
+      "question_mode": "ai_with_verification",
+      "knowledge_points": ["小数的意义", "小数的读法和写法", "小数的性质", "小数的大小比较", "小数点位置移动", "生活中的小数", "求小数的近似数"],
+      "prerequisites": []
+    },
+    {
+      "id": 5, "name": "三角形", "lessons": 6,
+      "question_mode": "question_bank",
+      "knowledge_points": ["三角形的特性", "三角形的分类", "三角形的内角和", "图形的拼组"],
+      "prerequisites": []
+    },
+    {
+      "id": 6, "name": "小数的加法和减法", "lessons": 6,
+      "question_mode": "ai_with_verification",
+      "knowledge_points": ["小数的加减法", "小数的加减法混合计算", "小数加减法的简便计算"],
+      "prerequisites": [4]
+    },
+    {
+      "id": 7, "name": "图形的运动（二）", "lessons": 4,
+      "question_mode": "question_bank",
+      "knowledge_points": ["轴对称", "平移"],
+      "prerequisites": []
+    },
+    {
+      "id": 8, "name": "平均数与条形统计图", "lessons": 5,
+      "question_mode": "mixed",
+      "knowledge_points": ["平均数", "复式条形统计图"],
+      "prerequisites": [1]
+    },
+    {
+      "id": 9, "name": "数学广角——鸡兔同笼", "lessons": 3,
+      "question_mode": "ai_with_verification",
+      "knowledge_points": ["鸡兔同笼问题"],
+      "prerequisites": [1],
+      "optional": true
+    }
+  ],
+  "dependencies": {
+    "3": [1],
+    "6": [4],
+    "8": [1],
+    "9": [1]
+  },
+  "total_lessons": 52
+}

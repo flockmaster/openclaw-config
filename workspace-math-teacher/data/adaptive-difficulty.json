@@ -1,0 +1,21 @@
+{
+    "current_level": 2,
+    "level_labels": {
+        "1": "基础概念题",
+        "2": "基础计算题",
+        "3": "标准应用题",
+        "4": "拔高题",
+        "5": "奥数/竞赛题"
+    },
+    "consecutive_correct": 0,
+    "consecutive_wrong": 0,
+    "recent_10": [],
+    "daily_accuracy": [],
+    "last_updated": "2026-02-26",
+    "_rules": {
+        "level_up": "连续答对5题 → 难度+1（最高5）",
+        "level_down": "连续答错2题 → 难度-1（最低1）",
+        "advance_unit": "正确率>80%持续3天 → 建议进入下一单元",
+        "retreat": "正确率<50% → 回退复习上一个知识点"
+    }
+}

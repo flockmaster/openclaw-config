@@ -1,0 +1,304 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "c0673d21-35e8-446c-86e8-9ae414442146",
+      "agentId": "main",
+      "name": "单词报告测试-现在",
+      "enabled": false,
+      "createdAtMs": 1770290362142,
+      "updatedAtMs": 1770290600000,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-02-05T11:23:20.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行任务：\n1. 执行 cd /Users/tingjing/.openclaw/workspaceq && python3 scripts/word_report_checker.py\n2. 获取退出码和输出结果\n3. 如果退出码是0，不操作\n4. 如果退出码是1，用message工具发送飞书消息给用户 ou_d2f369768bb42d11bd1f3085ea74e81f：\"⚠️ 今天还没收到单词学习报告~\"\n5. 如果退出码是2，发送：\"❌ 邮箱检查异常：{错误信息}\"\n回报执行结果",
+        "timeoutSeconds": 120
+      },
+      "state": {
+        "lastRunAtMs": 1770290600000,
+        "lastStatus": "ok",
+        "lastDurationMs": 120191
+      },
+      "delivery": {
+        "mode": "announce"
+      }
+    },
+    {
+      "id": "c9e6b7c5-bfc7-42cb-bb86-9f8605d52edb",
+      "agentId": "main",
+      "name": "测试-仅发送AAAA",
+      "enabled": false,
+      "createdAtMs": 1770290756061,
+      "updatedAtMs": 1770290820002,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-02-05T11:27:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "使用 message 工具发送飞书消息给用户 ou_d2f369768bb42d11bd1f3085ea74e81f，内容仅为：AAAA",
+        "timeoutSeconds": 60
+      },
+      "state": {
+        "lastRunAtMs": 1770290820002,
+        "lastStatus": "ok",
+        "lastDurationMs": 12762
+      },
+      "delivery": {
+        "mode": "announce"
+      }
+    },
+    {
+      "id": "64e2954b-36be-4d8f-ae1a-d6da56d1cb2f",
+      "agentId": "ops-agent",
+      "name": "每日单词报告检查 -18:46",
+      "enabled": true,
+      "createdAtMs": 1770290874184,
+      "updatedAtMs": 1772622301261,
+      "schedule": {
+        "kind": "cron",
+        "expr": "46 18 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行单词报告检查（纯脚本模式）：\n\n1. 运行脚本：python3 /Users/tingjing/.openclaw/workspace/scripts/check_word_report.py\n2. 捕获退出码和输出\n3. 根据退出码处理：\n   - 退出码 0：找到报告，静默（不发消息）\n   - 退出码 1：未找到，发送飞书给 ou_d2f369768bb42d11bd1f3085ea74e81f：\"⚠️ 今天还没收到单词学习报告~\"\n   - 退出码 2：出错，发送飞书：\"❌ 邮箱检查异常：{脚本输出}\"\n\n不要做任何 LLM 判断，只执行脚本 + 根据退出码发固定消息。",
+        "timeoutSeconds": 180
+      },
+      "state": {
+        "nextRunAtMs": 1772707560000,
+        "lastRunAtMs": 1772621306337,
+        "lastStatus": "error",
+        "lastDurationMs": 994924,
+        "consecutiveErrors": 2,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "unknown",
+        "lastError": "cron: job execution timed out"
+      },
+      "delivery": {
+        "mode": "announce",
+        "bestEffort": true
+      }
+    },
+    {
+      "id": "bd479d85-4d31-467c-9c26-efda8ab20e2b",
+      "agentId": "main",
+      "name": "完整测试-19:33",
+      "enabled": false,
+      "createdAtMs": 1770291030704,
+      "updatedAtMs": 1770291030717,
+      "schedule": {
+        "kind": "at",
+        "at": "2025-02-21T08:53:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "完整测试任务：\n\n1. 执行检查脚本：cd /Users/tingjing/.openclaw/workspaceq && python3 scripts/word_report_checker.py > /tmp/test_check.txt 2>&1\n2. 获取退出码：从上面命令的返回值得出\n3. 读取结果：cat /tmp/test_check.txt\n\n根据退出码处理：\n- EXIT_CODE == 0：找到报告，发送消息：\"✅ 测试通过！找到今日单词报告，明日将静默\"\n- EXIT_CODE == 1：未找到，发送消息：\"⚠️ 测试通过！今日无单词报告，明日将提醒\"\n- EXIT_CODE == 2：出错，发送消息：\"❌ 测试显示异常：{错误信息}\"\n\n所有结果都发给用户 ou_d2f369768bb42d11bd1f3085ea74e81f\n\n请执行并反馈完整流程。",
+        "timeoutSeconds": 180
+      },
+      "state": {
+        "lastRunAtMs": 1770291030717,
+        "lastStatus": "ok",
+        "lastDurationMs": 44170
+      },
+      "delivery": {
+        "mode": "announce"
+      }
+    },
+    {
+      "id": "44605485-45c3-4d0e-9c83-6a7bad38a531",
+      "agentId": "main",
+      "name": "测试-IMAP连接-19:36",
+      "enabled": false,
+      "createdAtMs": 1770291235497,
+      "updatedAtMs": 1770291235509,
+      "schedule": {
+        "kind": "at",
+        "at": "2025-02-21T08:56:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "测试 IMAP 连接任务：\n\n执行命令：cd /Users/tingjing/.openclaw/workspaceq && python3 scripts/test_imap_connection.py 2>&1\n\n根据退出码和输出发送消息：\n- 退出码 0 （成功）：发飞书 \"✅ IMAP连接测试通过：能正常登录QQ邮箱\"\n- 退出码 1 （失败）：发飞书 \"❌ IMAP连接测试失败：无法登录QQ邮箱，错误：{错误信息}\"\n\n发送给用户 ou_d2f369768bb42d11bd1f3085ea74e81f\n\n请执行并反馈结果。",
+        "timeoutSeconds": 60
+      },
+      "state": {
+        "lastRunAtMs": 1770291235509,
+        "lastStatus": "ok",
+        "lastDurationMs": 24338
+      },
+      "delivery": {
+        "mode": "announce"
+      }
+    },
+    {
+      "id": "cb2768b1-3abe-43d9-b655-1d06137e184e",
+      "agentId": "main",
+      "name": "每日 AI 新闻语音播报-09:00",
+      "enabled": true,
+      "createdAtMs": 1770774758288,
+      "updatedAtMs": 1772587191306,
+      "schedule": {
+        "kind": "cron",
+        "expr": "5 9 * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "CRON_TRIGGER: 每日AI新闻语音播报。立即 spawn 给 ops-agent 执行：抓取今日AI新闻、编写口播文案、生成语音、发送飞书。",
+        "timeoutSeconds": 900
+      },
+      "state": {
+        "nextRunAtMs": 1772672700000,
+        "lastRunAtMs": 1772586883082,
+        "lastStatus": "ok",
+        "lastDurationMs": 308224,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered"
+      },
+      "delivery": {
+        "mode": "announce",
+        "bestEffort": true
+      }
+    },
+    {
+      "id": "3f4fa46d-46f8-47fe-bde6-2b55470b19eb",
+      "name": "每周进化-周日10:00",
+      "enabled": true,
+      "createdAtMs": 1771927593173,
+      "updatedAtMs": 1772161806402,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * 0",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "CRON_TRIGGER: 每周进化。立即 spawn 给 ops-agent 执行：读取 docs/workflows/evolve.md，执行进化工作流，发送报告。",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1772935200000
+      }
+    },
+    {
+      "id": "d76d537d-a3b6-46b3-8dcb-3f8ab1fdf5cb",
+      "agentId": "ops-agent",
+      "name": "监控 GitHub issue #29252 回复",
+      "enabled": true,
+      "createdAtMs": 1772240073442,
+      "updatedAtMs": 1772634626634,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/30 * * * *"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "使用 gh issue view 29252 --repo openclaw/openclaw --json comments,author,createdAt,updatedAt 检查 issue 更新，如有新回复通知用户"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1772636400000,
+        "lastRunAtMs": 1772634600015,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 26619,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 1,
+        "lastError": "No delivery target resolved for channel \"feishu\". Set delivery.to."
+      }
+    },
+    {
+      "id": "71223493-4b6b-458b-9f5c-016550ce972f",
+      "agentId": "ops-agent",
+      "name": "监控 GitHub issue #29252 回复",
+      "enabled": true,
+      "createdAtMs": 1772240547778,
+      "updatedAtMs": 1772633668993,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 10800000,
+        "anchorMs": 1772240547778
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "执行 GitHub issue #29252 监控检查，脚本路径：/Users/tingjing/.openclaw/workspace-ops-agent/monitor_github_issue.sh"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1772644448857,
+        "lastRunAtMs": 1772633648857,
+        "lastRunStatus": "error",
+        "lastStatus": "error",
+        "lastDurationMs": 20136,
+        "lastDeliveryStatus": "unknown",
+        "consecutiveErrors": 15,
+        "lastError": "No delivery target resolved for channel \"feishu\". Set delivery.to."
+      }
+    },
+    {
+      "id": "ecb492dc-80e8-4289-95e9-cc1301d7cb10",
+      "name": "每日创业项目语音播报 -05:00",
+      "enabled": true,
+      "createdAtMs": 1772466170049,
+      "updatedAtMs": 1772573699835,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 5 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "CRON_TRIGGER: 每日创业项目语音播报（startup-daily skill）。\n\n执行流程：\n1. 用 web_search 搜索今日创业项目（关键词：'独立开发 融资 2026'、'SaaS 创业'、'AI 初创'、'Product Hunt'）\n2. 过滤掉农业、养殖、传统行业等非软件项目\n3. 整理 3-5 个精选项目（名称、介绍、亮点、链接）\n4. 编写口播文案（口语化，300-500 字）\n5. 调用 tts 生成语音（超时则跳过，发纯文字）\n6. 用 message 发送飞书给 ou_d2f369768bb42d11bd1f3085ea74e81f\n\n注意：\n- 只要软件/互联网/AI 相关项目\n- 口播文案像朋友聊天\n- 每个项目附原文链接\n- TTS 超时不阻塞，降级发文字"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "feishu",
+        "to": "user:ou_d2f369768bb42d11bd1f3085ea74e81f"
+      },
+      "state": {
+        "nextRunAtMs": 1772658000000,
+        "lastRunAtMs": 1772572725807,
+        "lastRunStatus": "ok",
+        "lastStatus": "ok",
+        "lastDurationMs": 974028,
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "consecutiveErrors": 0
+      }
+    }
+  ]
+}

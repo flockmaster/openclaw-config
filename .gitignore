@@ -1,0 +1,41 @@
+# 依赖和构建产物
+node_modules/
+dist/
+.build/
+
+# 日志文件
+logs/
+*.log
+
+# 会话历史（可选跟踪，默认忽略）
+sessions/
+agents/*/sessions/
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+*~
+
+# 系统文件
+.DS_Store
+._*
+
+# 备份文件（已经有 Git 了）
+openclaw-backup-*.tar.gz
+
+# 敏感文件（手动管理）
+# .env
+# .credentials/
+
+# 向量数据库（太大，重新生成）
+memory/lancedb-pro/
+memory/*.lance
+
+# 缓存
+.cache/
+tmp/
+
+# 测试产物
+coverage/
+test-results/

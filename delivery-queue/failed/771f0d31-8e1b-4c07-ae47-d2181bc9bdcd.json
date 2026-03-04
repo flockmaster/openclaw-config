@@ -1,0 +1,23 @@
+{
+  "id": "771f0d31-8e1b-4c07-ae47-d2181bc9bdcd",
+  "enqueuedAt": 1772240752492,
+  "channel": "feishu",
+  "to": "dingtalk",
+  "payloads": [
+    {
+      "text": "**GitHub Issue #29252 更新提醒**\n\n-title:** Thinking mode incompatible with new API / proxy API\n- **状态:** OPEN\n- **URL:** https://github.com/openclaw/openclaw/issues/29252\n- **作者:** flockmaster\n- **创建时间:** 2026-02-28 08:53 (北京时间)\n- **评论数:** 0\n\n⚠️ 无新回复。问题仍处于 opened 状态，等待作者或其他开发者进一步讨论。",
+      "replyToTag": false,
+      "replyToCurrent": false,
+      "audioAsVoice": false
+    }
+  ],
+  "gifPlayback": false,
+  "mirror": {
+    "sessionKey": "agent:ops-agent:main",
+    "agentId": "ops-agent",
+    "text": "**GitHub Issue #29252 更新提醒**\n\n-title:** Thinking mode incompatible with new API / proxy API\n- **状态:** OPEN\n- **URL:** https://github.com/openclaw/openclaw/issues/29252\n- **作者:** flockmaster\n- **创建时间:** 2026-02-28 08:53 (北京时间)\n- **评论数:** 0\n\n⚠️ 无新回复。问题仍处于 opened 状态，等待作者或其他开发者进一步讨论。"
+  },
+  "retryCount": 5,
+  "lastAttemptAt": 1772427848615,
+  "lastError": "Request failed with status code 400"
+}

@@ -1,0 +1,33 @@
+{
+    "anthropic:default": {
+        "provider": "openai",
+        "mode": "api_key",
+        "apiKey": "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",
+        "baseURL": "https://integrate.api.nvidia.com/v1"
+    },
+    "openai": {
+        "provider": "openai",
+        "mode": "api_key",
+        "apiKey": "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",
+        "baseURL": "https://integrate.api.nvidia.com/v1"
+    },
+    "nvidia-kimi": {
+        "provider": "openai",
+        "mode": "api_key",
+        "apiKey": "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",
+        "baseURL": "https://integrate.api.nvidia.com/v1"
+    },
+    "kimi-coding": {
+        "provider": "openai",
+        "mode": "api_key",
+        "apiKey": "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",
+        "baseURL": "https://integrate.api.nvidia.com/v1"
+    },
+    "codex-makeup": {
+        "provider": "openai",
+        "mode": "api_key",
+        "apiKey": "sk-CzQAOeUx3QOTwDRTez5vmiuitssojnqaCAVUKzr41EVgubWi",
+        "baseURL": "https://codex.makeup/v1",
+        "api": "openai-responses"
+    }
+}

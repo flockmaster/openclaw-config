@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.1.30",
+    "lastTouchedAt": "2026-02-02T07:18:57.200Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-02T06:57:03.923Z",
+    "lastRunVersion": "2026.1.30",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "auth": {},
+  "agents": {
+    "defaults": {
+      "models": {
+        "anthropic/claude-opus-4-5": {
+          "alias": "opus"
+        }
+      },
+      "workspace": "/Users/tingjing/.openclaw/workspaceq",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "channels": {
+    "feishu": {
+      "appId": "cli_a90ab1719cb99bd3",
+      "appSecret": "cJ1v5gYSqb3TLcyTDPzulfrbmOCVraVy",
+      "connectionMode": "websocket",
+      "enabled": true
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "auto",
+    "auth": {
+      "mode": "token",
+      "token": "d3752561bdd64139907676de63686924120d6c7e40576bf0",
+      "allowTailscale": true
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "remote": {
+      "token": "sk-ZPg6tTdElNlKaBWAvi9YZLJXGqpAaks6mK6YyVRb8XCthm35"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "feishu": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "feishu": {
+        "source": "npm",
+        "spec": "@m1heng-clawd/feishu",
+        "installPath": "/Users/tingjing/.openclaw/extensions/feishu",
+        "version": "0.1.6",
+        "installedAt": "2026-02-02T05:32:32.745Z"
+      }
+    }
+  }
+}

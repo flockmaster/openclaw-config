@@ -1,0 +1,17 @@
+{
+  "issueId": 29252,
+  "repo": "openclaw/openclaw",
+  "title": "Thinking mode incompatible with new API / proxy API",
+  "author": "flockmaster",
+  "state": "OPEN",
+  "createdAt": "2026-02-28T00:53:47Z",
+  "lastCheckedAt": "2026-03-04T03:59:00Z",
+  "lastKnownComments": [
+    {
+      "id": "IC_kwDOQb6kR87s_pUV",
+      "author": "newcodebook",
+      "createdAt": "2026-02-28T02:06:42Z",
+      "body": "In most \"new API / proxy API\" setups, *thinking mode* breaks because the upstream relay doesn't support OpenClaw's `reasoning` toggle..."
+    }
+  ]
+}

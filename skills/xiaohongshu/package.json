@@ -1,0 +1,13 @@
+{
+  "name": "xiaohongshu-skill",
+  "version": "1.0.0",
+  "description": "Xiaohongshu note fetcher skill",
+  "type": "module",
+  "scripts": {
+    "init": "npx rednote-mcp init",
+    "login": "npx rednote-mcp init"
+  },
+  "dependencies": {
+    "rednote-mcp": "^0.2.3"
+  }
+}

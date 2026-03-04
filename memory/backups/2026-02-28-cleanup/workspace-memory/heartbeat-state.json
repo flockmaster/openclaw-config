@@ -1,0 +1,8 @@
+{
+  "lastCheck": "2026-02-28T09:43:00+08:00",
+  "activeSubagents": 0,
+  "heartbeatInterval": "30m",
+  "notes": "无活跃任务，心跳间隔保持 30m",
+  "logCheck": "warning",
+  "logSummary": "Feishu API 400 错误（用户 ID 获取问题）为 recurring 错误，非新增；GitHub issue #29252 监控 cron 运行中（3 小时一次）；默认模型已改为 qwen3.5-plus，ops-agent 模型已改为 qwen3.5-plus"
+}

@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "skills": {
+    "proactive-agent": {
+      "version": "1.2.4",
+      "installedAt": 1771693682748
+    },
+    "ui-ux-design": {
+      "version": "1.0.0",
+      "installedAt": 1772138206173
+    },
+    "flutter": {
+      "version": "1.0.1",
+      "installedAt": 1772138276161
+    },
+    "clean-code": {
+      "version": "1.0.0",
+      "installedAt": 1772138370163
+    },
+    "prd": {
+      "version": "2.0.5",
+      "installedAt": 1772138409088
+    },
+    "backend-patterns": {
+      "version": "0.1.2",
+      "installedAt": 1772138443994
+    },
+    "test-master": {
+      "version": "0.1.0",
+      "installedAt": 1772138473662
+    },
+    "responsive-design": {
+      "version": "1.0.0",
+      "installedAt": 1772138505041
+    },
+    "tailwindcss": {
+      "version": "1.0.0",
+      "installedAt": 1772138550079
+    },
+    "shadcn-ui": {
+      "version": "1.0.0",
+      "installedAt": 1772140106806
+    },
+    "bocha-search": {
+      "version": "1.0.0",
+      "installedAt": 1772140107044
+    },
+    "openclaw-tavily-search": {
+      "version": "0.1.0",
+      "installedAt": 1772417774259
+    },
+    "openclaw-token-optimizer": {
+      "version": "3.0.0",
+      "installedAt": 1772498823949
+    }
+  }
+}

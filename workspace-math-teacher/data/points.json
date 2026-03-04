@@ -1,0 +1,52 @@
+{
+    "total_points": 50,
+    "consecutive_days": 0,
+    "max_consecutive_days": 1,
+    "last_practice_date": "2026-02-25",
+    "achievements": [],
+    "history": [
+        {
+            "date": "2026-02-25",
+            "event": "基础题完成",
+            "amount": 5,
+            "total_after": 5
+        },
+        {
+            "date": "2026-02-25",
+            "event": "应用题做对（弱项奖励）",
+            "amount": 10,
+            "total_after": 15
+        },
+        {
+            "date": "2026-02-25",
+            "event": "连续答对5题",
+            "amount": 10,
+            "total_after": 25
+        },
+        {
+            "date": "2026-02-25",
+            "event": "拔高题完成",
+            "amount": 10,
+            "total_after": 35
+        },
+        {
+            "date": "2026-02-25",
+            "event": "基础题完成",
+            "amount": 5,
+            "total_after": 40
+        },
+        {
+            "date": "2026-02-25",
+            "event": "基础题完成",
+            "amount": 5,
+            "total_after": 45
+        },
+        {
+            "date": "2026-02-25",
+            "event": "基础题完成",
+            "amount": 5,
+            "total_after": 50
+        }
+    ],
+    "source_note": "从 MaxClaw 迁移，原始记录日期 2026-02-25"
+}

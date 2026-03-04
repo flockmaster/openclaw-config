@@ -1,0 +1,13 @@
+2026/03/02-15:37:26.906 160217d Reusing MANIFEST /Users/tingjing/.openclaw/browser/openclaw/user-data/Default/IndexedDB/https_agent.minimax.io_0.indexeddb.leveldb/MANIFEST-000001
+2026/03/02-15:37:26.906 160217d Recovering log #6
+2026/03/02-15:37:26.907 160217d Reusing old log /Users/tingjing/.openclaw/browser/openclaw/user-data/Default/IndexedDB/https_agent.minimax.io_0.indexeddb.leveldb/000006.log 
+2026/03/02-15:37:26.934 1602188 Level-0 table #10: started
+2026/03/02-15:37:26.934 1602188 Level-0 table #10: 1312 bytes OK
+2026/03/02-15:37:26.936 1602188 Delete type=0 #6
+2026/03/02-15:37:26.936 160217f Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at '\x00\x06\x00\x00\x05' @ 198 : 1
+2026/03/02-15:37:26.936 160217f Compacting 1@0 + 1@1 files
+2026/03/02-15:37:26.937 160217f Generated table #11@0: 61 keys, 1514 bytes
+2026/03/02-15:37:26.937 160217f Compacted 1@0 + 1@1 files => 1514 bytes
+2026/03/02-15:37:26.938 160217f compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/03/02-15:37:26.938 160217f Delete type=2 #10
+2026/03/02-15:37:26.938 160217f Manual compaction at level-0 from '\x00\x06\x00\x00\x05' @ 198 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)

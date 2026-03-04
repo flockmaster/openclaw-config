@@ -1,0 +1,7 @@
+2026/02/06-13:13:26.034 14a773 Reusing MANIFEST /Users/tingjing/.openclaw/browser/openclaw/user-data/Default/IndexedDB/https_x.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/06-13:13:26.034 14a773 Recovering log #3
+2026/02/06-13:13:26.034 14a773 Reusing old log /Users/tingjing/.openclaw/browser/openclaw/user-data/Default/IndexedDB/https_x.com_0.indexeddb.leveldb/000003.log 
+2026/02/06-14:26:52.816 14a775 Level-0 table #5: started
+2026/02/06-14:26:52.818 14a775 Level-0 table #5: 7565 bytes OK
+2026/02/06-14:26:52.820 14a775 Delete type=0 #3
+2026/02/06-14:26:52.822 14a775 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

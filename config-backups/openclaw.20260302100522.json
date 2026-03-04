@@ -1,0 +1,537 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.24",
+    "lastTouchedAt": "2026-02-26T19:49:05.078Z"
+  },
+  "auth": {
+    "profiles": {}
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "anyrouter": {
+        "baseUrl": "https://anyrouter.top",
+        "apiKey": "sk-CUsgJFbetIw6x3G9GmcPiYfqCDOxpLWgWkIWv8xThfm3gzrS",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "claude-opus-4-6",
+            "name": "Claude Opus 4.6",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "freestyle": {
+        "baseUrl": "http://127.0.0.1:8046/v1",
+        "apiKey": "sk-3DfwqyTPybzOr2WY3hQYuEAjjOqFciXRGByuMhwY6TsfQ3VB",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "gemini-3-1-pro",
+            "name": "Gemini 3.1 Pro (个人代理)",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "bailian": {
+        "baseUrl": "https://coding.dashscope.aliyuncs.com/v1",
+        "apiKey": "sk-sp-1fcce4d8d3aa4ed9a2c2fedd564b8423",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "qwen3.5-plus",
+            "name": "qwen3.5-plus",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3-max-2026-01-23",
+            "name": "qwen3-max-2026-01-23",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3-coder-next",
+            "name": "qwen3-coder-next",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 65536
+          },
+          {
+            "id": "qwen3-coder-plus",
+            "name": "qwen3-coder-plus",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "MiniMax-M2.5",
+            "name": "MiniMax-M2.5",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 1000000,
+            "maxTokens": 65536
+          },
+          {
+            "id": "glm-5",
+            "name": "glm-5",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 202752,
+            "maxTokens": 16384
+          },
+          {
+            "id": "glm-4.7",
+            "name": "glm-4.7",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 202752,
+            "maxTokens": 16384
+          },
+          {
+            "id": "kimi-k2.5",
+            "name": "kimi-k2.5",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 32768
+          }
+        ]
+      },
+      "codex-makeup": {
+        "baseUrl": "https://codex.makeup/v1",
+        "apiKey": "sk-CzQAOeUx3QOTwDRTez5vmiuitssojnqaCAVUKzr41EVgubWi",
+        "api": "openai-responses",
+        "models": [
+          {
+            "id": "gpt-5.3-codex",
+            "name": "GPT-5.3 Codex",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "contextWindow": 128000,
+            "maxTokens": 16384
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "bailian/glm-5"
+      },
+      "models": {
+        "bailian/qwen3.5-plus": {
+          "alias": "qwen"
+        },
+        "bailian/qwen3-max-2026-01-23": {
+          "alias": "max"
+        },
+        "bailian/qwen3-coder-next": {
+          "alias": "coder"
+        },
+        "bailian/qwen3-coder-plus": {
+          "alias": "cp"
+        },
+        "bailian/MiniMax-M2.5": {
+          "alias": "minimax"
+        },
+        "bailian/glm-5": {
+          "alias": "glm5"
+        },
+        "bailian/glm-4.7": {
+          "alias": "glm4"
+        },
+        "bailian/kimi-k2.5": {
+          "alias": "kimi"
+        },
+        "anyrouter/claude-opus-4-6": {
+          "alias": "opus"
+        },
+        "freestyle/gemini-3-1-pro": {
+          "alias": "gemini"
+        },
+        "codex-makeup/gpt-5.3-codex": {
+          "alias": "gpt5"
+        }
+      },
+      "workspace": "/Users/tingjing/.openclaw/workspace",
+      "memorySearch": {
+        "sources": [
+          "memory",
+          "sessions"
+        ],
+        "experimental": {
+          "sessionMemory": true
+        },
+        "provider": "openai",
+        "remote": {
+          "baseUrl": "https://api.jina.ai/v1/",
+          "apiKey": "jina_8160842bc12a40759326b7ebff9dc770GmXi9TQnlKFra3Fz9HnnjRrmI8pn"
+        },
+        "model": "jina-embeddings-v5-text-small",
+        "query": {
+          "hybrid": {
+            "enabled": true,
+            "vectorWeight": 0.7,
+            "textWeight": 0.3,
+            "mmr": {
+              "enabled": true,
+              "lambda": 0.7
+            },
+            "temporalDecay": {
+              "enabled": true,
+              "halfLifeDays": 30
+            }
+          }
+        }
+      },
+      "compaction": {
+        "mode": "safeguard",
+        "memoryFlush": {
+          "enabled": true
+        }
+      },
+      "thinkingDefault": "off",
+      "blockStreamingDefault": "on",
+      "blockStreamingBreak": "text_end",
+      "heartbeat": {
+        "every": "30m"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8,
+        "archiveAfterMinutes": 60
+      }
+    },
+    "list": [
+      {
+        "id": "main",
+        "subagents": {
+          "allowAgents": [
+            "*"
+          ]
+        }
+      },
+      {
+        "id": "math-teacher",
+        "name": "数学老师",
+        "workspace": "/Users/tingjing/.openclaw/workspace-math-teacher",
+        "agentDir": "/Users/tingjing/.openclaw/agents/math-teacher/agent",
+        "model": "bailian/kimi-k2.5",
+        "memorySearch": {
+          "extraPaths": [
+            "/Users/tingjing/.openclaw/workspace/MEMORY.md",
+            "/Users/tingjing/.openclaw/workspace/memory"
+          ]
+        }
+      },
+      {
+        "id": "product-manager",
+        "name": "产品经理",
+        "workspace": "/Users/tingjing/.openclaw/workspace-product-manager",
+        "agentDir": "/Users/tingjing/.openclaw/agents/product-manager/agent",
+        "model": "bailian/qwen3.5-plus",
+        "memorySearch": {
+          "extraPaths": [
+            "/Users/tingjing/.openclaw/workspace/MEMORY.md",
+            "/Users/tingjing/.openclaw/workspace/memory"
+          ]
+        }
+      },
+      {
+        "id": "frontend-engineer",
+        "name": "前端开发工程师",
+        "workspace": "/Users/tingjing/.openclaw/workspace-frontend-engineer",
+        "agentDir": "/Users/tingjing/.openclaw/agents/frontend-engineer/agent",
+        "model": "bailian/kimi-k2.5",
+        "memorySearch": {
+          "extraPaths": [
+            "/Users/tingjing/.openclaw/workspace/MEMORY.md",
+            "/Users/tingjing/.openclaw/workspace/memory"
+          ]
+        }
+      },
+      {
+        "id": "backend-engineer",
+        "name": "后端开发工程师",
+        "workspace": "/Users/tingjing/.openclaw/workspace-backend-engineer",
+        "agentDir": "/Users/tingjing/.openclaw/agents/backend-engineer/agent",
+        "model": "bailian/glm-5",
+        "memorySearch": {
+          "extraPaths": [
+            "/Users/tingjing/.openclaw/workspace/MEMORY.md",
+            "/Users/tingjing/.openclaw/workspace/memory"
+          ]
+        }
+      },
+      {
+        "id": "ops-agent",
+        "name": "运营专家",
+        "workspace": "/Users/tingjing/.openclaw/workspace-ops-agent",
+        "agentDir": "/Users/tingjing/.openclaw/agents/ops-agent/agent",
+        "model": "bailian/qwen3.5-plus",
+        "memorySearch": {
+          "extraPaths": [
+            "/Users/tingjing/.openclaw/workspace/MEMORY.md",
+            "/Users/tingjing/.openclaw/workspace/memory"
+          ]
+        }
+      },
+      {
+        "id": "qa-engineer",
+        "name": "QA测试工程师",
+        "workspace": "/Users/tingjing/.openclaw/workspace-qa-engineer",
+        "model": "bailian/qwen3.5-plus"
+      },
+      {
+        "id": "gpt5-tester",
+        "name": "模型测试专家",
+        "workspace": "/Users/tingjing/.openclaw/workspace-gpt5-tester",
+        "agentDir": "/Users/tingjing/.openclaw/agents/gpt5-tester/agent",
+        "model": "bailian/glm-5",
+        "memorySearch": {
+          "extraPaths": [
+            "/Users/tingjing/.openclaw/workspace/MEMORY.md",
+            "/Users/tingjing/.openclaw/workspace/memory"
+          ]
+        }
+      }
+    ]
+  },
+  "session": {
+    "reset": {
+      "mode": "idle",
+      "idleMinutes": 120
+    },
+    "maintenance": {
+      "mode": "enforce",
+      "pruneAfter": "14d",
+      "maxEntries": 200,
+      "maxDiskBytes": "500mb",
+      "rotateBytes": "10mb"
+    }
+  },
+  "bindings": [
+    {
+      "agentId": "math-teacher",
+      "match": {
+        "channel": "feishu",
+        "peer": {
+          "kind": "group",
+          "id": "oc_66f88d009c5efec903f5456ab6e8eade"
+        }
+      }
+    },
+    {
+      "agentId": "product-manager",
+      "comment": "产品讨论群 - 绑定产品经理 Agent",
+      "match": {
+        "channel": "feishu",
+        "peer": {
+          "kind": "group",
+          "id": "oc_2e74c70a5798126f666eb4cb864f7081"
+        }
+      }
+    },
+    {
+      "agentId": "frontend-engineer",
+      "comment": "技术开发群 - 绑定前端/后端工程师 Agent",
+      "match": {
+        "channel": "feishu",
+        "peer": {
+          "kind": "group",
+          "id": "oc_34f05e2aed91ef79cea7502d0b4c688d"
+        }
+      }
+    }
+  ],
+  "messages": {
+    "ackReactionScope": "all"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "session-memory": {
+          "enabled": false
+        },
+        "session-summary": {
+          "enabled": true
+        },
+        "command-logger": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "feishu": {
+      "appId": "cli_a90ab1719cb99bd3",
+      "appSecret": "cJ1v5gYSqb3TLcyTDPzulfrbmOCVraVy",
+      "connectionMode": "websocket",
+      "enabled": true,
+      "groups": {
+        "oc_2e74c70a5798126f666eb4cb864f7081": {
+          "requireMention": false,
+          "comment": "产品讨论群 - 免@响应"
+        },
+        "oc_34f05e2aed91ef79cea7502d0b4c688d": {
+          "requireMention": false,
+          "comment": "技术开发群 - 免@响应"
+        },
+        "oc_66f88d009c5efec903f5456ab6e8eade": {
+          "requireMention": true,
+          "comment": "数学学习群 - 需要@"
+        }
+      }
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "auto",
+    "controlUi": {
+      "enabled": true,
+      "basePath": "/openclaw",
+      "allowInsecureAuth": true
+    },
+    "auth": {
+      "mode": "token",
+      "token": "d3752561bdd64139907676de63686924120d6c7e40576bf0",
+      "allowTailscale": true
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "remote": {
+      "token": "sk-ZPg6tTdElNlKaBWAvi9YZLJXGqpAaks6mK6YyVRb8XCthm35"
+    }
+  },
+  "skills": {
+    "load": {
+      "extraDirs": [
+        "/Users/tingjing/.openclaw/workspace/skills"
+      ],
+      "watch": true
+    }
+  },
+  "plugins": {
+    "load": {
+      "paths": []
+    },
+    "slots": {
+      "memory": "none"
+    },
+    "entries": {
+      "feishu": {
+        "enabled": true
+      }
+    }
+  }
+}
